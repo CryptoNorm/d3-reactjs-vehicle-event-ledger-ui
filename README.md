@@ -1,6 +1,4 @@
-# node-demo-ledger-ui
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# d3-reactjs-vehicle-event-ledger-ui
 
 It serves as a front end UI to record vehicle maintenance actions.  Requests are sent to a REST API, found in the [go-demo-hedera-ledger-rest repository](https://github.com/droatl2000/go-demo-hedera-ledger-rest), that logs messages on the Hedera distrubuted ledger.  The go-demo-hedera-ledger-rest project runs on localhost:8082. 
 
@@ -32,7 +30,7 @@ yarn start
 Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
 
 
-Much of the UI was forked from jkuri/d3-car-dashboard.
+Much of the UI was forked from jkuri/d3-car-dashboard (https://github.com/jkuri/d3-car-dashboard).
 
 # D3 Car Dashboard Experiment
 

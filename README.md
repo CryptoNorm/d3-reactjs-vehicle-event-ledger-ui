@@ -2,9 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-It serves as a front end UI to record vehicle maintenance actions.  Requests are sent to a REST API, found in the [go-demo-hedera-ledger-rest repository](https://github.com/droatl2000/go-demo-hedera-ledger-rest), that logs messages on the Hedera distrubuted ledger.  The go-demo-hedera-ledger-rest project runs on localhost:8082. See [/node-demo-ledger-ui/blob/main/src/http-common.js](https://github.com/droatl2000/node-demo-ledger-ui/blob/main/src/http-common.js) to update the port.
+It serves as a front end UI to record vehicle maintenance actions.  Requests are sent to a REST API, found in the [go-demo-hedera-ledger-rest repository](https://github.com/droatl2000/go-demo-hedera-ledger-rest), that logs messages on the Hedera distrubuted ledger.  The go-demo-hedera-ledger-rest project runs on localhost:8082. 
 
-The function of this demo app is to log vehicle maintenance/repairs onto a public, immutable ledger, in this case the Hedera network. App users could use it to prove they did maintenance on their vehicle, which would be usefull for resale evalution purposes. Orgazizations, like police departments and repair shops could also use it to record incidents like accident damage.
+The function of this demo app is to log vehicle maintenance/repairs onto a public, immutable ledger, in this case the Hedera network. App users could use it to prove they did maintenance on their vehicle, which would be usefull for resale evalution purposes. The manufactureer and orgazizations, like insurance providers and independent reviewer, would also find the data invaluable.
 
 ## Setup
 ### Set url & port from REST endpoint (default is 8082)

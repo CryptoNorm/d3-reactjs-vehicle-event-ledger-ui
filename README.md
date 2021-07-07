@@ -30,7 +30,7 @@ yarn start
 Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
 
 
-Much of the UI was forked from jkuri/d3-car-dashboard (https://github.com/jkuri/d3-car-dashboard).
+Much of the UI was forked from (jkuri/d3-car-dashboard)[https://github.com/jkuri/d3-car-dashboard].
 
 # D3 Car Dashboard Experiment
 

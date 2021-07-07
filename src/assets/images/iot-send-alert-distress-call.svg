@@ -1,0 +1,12 @@
+<svg width="275px" height="50px" viewBox="179 208 350 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g id="Group" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(179.000000, 208.000000)">
+    <rect id="Rectangle" fill="#FD3104" x="0" y="0" width="275" height="50" rx="8"></rect>
+    <path d="M120,8.5 L120,38.5" id="Line" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+    <text id="sendalertdistresscall" font-family="Helvetica" font-size="20" font-weight="normal" fill="#FFFFFF">
+      <tspan x="15" y="32">Send Alert</tspan>
+    </text>
+    <text id="100m" font-family="Helvetica" font-size="14" font-weight="normal" fill="#FFFFFF">
+      <tspan x="130" y="30">Distress Call</tspan>
+    </text>
+  </g>
+</svg>

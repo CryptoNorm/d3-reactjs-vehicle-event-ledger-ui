@@ -58,7 +58,7 @@ export class InfoTop extends React.Component<{}, undefined> {
 
     // kilometers remaining text
     g.append('text')
-      .text('130 km')
+      .text('130 mi')
       .attr('font-size', '16')
       .attr('text-anchor', 'middle')
       .attr('fill', '#FFFFFF')
@@ -88,7 +88,7 @@ export class InfoTop extends React.Component<{}, undefined> {
 
     // LTE signal text
     g.append('text')
-      .text('LTE')
+      .text('5G')
       .attr('font-size', '14')
       .attr('text-anchor', 'middle')
       .attr('fill', '#FFFFFF')
@@ -114,7 +114,7 @@ export class InfoTop extends React.Component<{}, undefined> {
 
     // battery text
     g.append('text')
-      .text('46%')
+      .text('92%')
       .attr('font-size', '14')
       .attr('text-anchor', 'middle')
       .attr('fill', '#FFFFFF')
@@ -140,7 +140,7 @@ export class InfoTop extends React.Component<{}, undefined> {
 
     // temperature text
     g.append('text')
-      .html('-12 &deg;C')
+      .html('81 &deg;F')
       .attr('font-size', '14')
       .attr('text-anchor', 'middle')
       .attr('fill', '#FFFFFF')

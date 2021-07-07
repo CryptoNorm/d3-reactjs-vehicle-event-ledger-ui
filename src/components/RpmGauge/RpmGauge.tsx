@@ -164,13 +164,10 @@ export class RpmGauge extends React.Component<IRpmGaugeProps> {
       .attr('z-index', '10');
 
     // big text in center
-    tg.append('text')
-      .text('D3')
-      .attr('font-size', '80')
-      .attr('text-anchor', 'middle')
-      .attr('fill', colors[2])
-      .attr('x', '0')
-      .attr('y', '25px')
+    tg.append('image')
+      .attr('xlink:href', '/images/hederaH.png')
+      .attr('x', '-50')
+      .attr('y', '-60px')
       .style('position', 'absolute')
       .style('z-index', '10');
 

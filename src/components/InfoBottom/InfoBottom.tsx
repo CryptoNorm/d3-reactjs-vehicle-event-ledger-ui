@@ -1,95 +1,37 @@
-import { select } from 'd3-selection';
 import * as React from 'react';
 
-export class InfoBottom extends React.Component<{}, undefined> {
+export class InfoBottom extends React.Component<{}, { curTime: string}> {
+  constructor(props: {}) {
+    super(props);
+    this.state = {
+      curTime: "1GNCS18Z3M0115561",
+    };
+  }
   public componentDidMount() {
-    this.generate();
+    setInterval(() => {
+      this.setState({
+        curTime : new Date().toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true })
+      })
+    }, 1000)
   }
 
   public render() {
-    return <div className="info-bottom"></div>;
-  }
-
-  private generate() {
-    const el = select('.info-bottom');
-    const svg = el.append('svg').attr('width', '100%').attr('height', '100%');
-    const g = svg.append('g');
-
-    // trip km text
-    g.append('text')
-      .text('Trip: 478.0km')
-      .attr('x', '90px')
-      .attr('y', '40px')
-      .attr('font-size', '18')
-      .attr('text-anchor', 'middle')
-      .attr('fill', '#FFFFFF');
-
-    // red line
-    g.append('image')
-      .attr('xlink:href', '/images/red-line.svg')
-      .attr('x', '160px')
-      .attr('y', '22px')
-      .attr('width', '25px')
-      .attr('height', '25px');
-
-    // hour
-    g.append('text')
-      .text('10:16am')
-      .attr('x', '230px')
-      .attr('y', '40px')
-      .attr('font-size', '18')
-      .attr('text-anchor', 'middle')
-      .attr('fill', '#FFFFFF');
-
-    // red line
-    g.append('image')
-      .attr('xlink:href', '/images/red-line.svg')
-      .attr('x', '280px')
-      .attr('y', '22px')
-      .attr('width', '25px')
-      .attr('height', '25px');
-
-    // mileage
-    g.append('text')
-      .text('21341km')
-      .attr('x', '370px')
-      .attr('y', '40px')
-      .attr('font-size', '18')
-      .attr('text-anchor', 'middle')
-      .attr('fill', '#FFFFFF');
-
-    // white line
-    g.append('image')
-      .attr('xlink:href', '/images/white-line.svg')
-      .attr('x', '65px')
-      .attr('y', '70px')
-      .attr('width', '320px')
-      .attr('height', '10px');
-
-    // iPhone text
-    g.append('text')
-      .text('iPhone')
-      .attr('x', '120px')
-      .attr('y', '100px')
-      .attr('font-size', '16')
-      .attr('text-anchor', 'middle')
-      .attr('fill', '#FFFFFF');
-
-    // musical note
-    g.append('image')
-      .attr('xlink:href', '/images/musical-note.svg')
-      .attr('x', '170px')
-      .attr('y', '80px')
-      .attr('width', '25px')
-      .attr('height', '25px');
-
-    // Song text
-    g.append('text')
-      .text('Wu-Tang Clan - Triumph')
-      .attr('x', '285px')
-      .attr('y', '97px')
-      .attr('font-size', '12')
-      .attr('text-anchor', 'middle')
-      .attr('fill', '#FFFFFF');
+    return (
+      <div className="info-bottom">
+        <svg width="100%" height="100%">
+          <g>
+            <text xmlns="http://www.w3.org/2000/svg" x="90px" y="40px" fontSize="18" textAnchor="middle" fill="#FFFFFF">Trip: 478.0mi</text>
+            <image href="/images/red-line.svg" x="160px" y="22px" width="25px" height="25px"></image>
+            <text xmlns="http://www.w3.org/2000/svg" x="230px" y="40px" fontSize="18" textAnchor="middle" fill="#FFFFFF">{this.state.curTime}</text>
+            <image href="/images/red-line.svg" x="280px" y="22px" width="25px" height="25px"></image>
+            <text xmlns="http://www.w3.org/2000/svg" x="370px" y="40px" fontSize="18" textAnchor="middle" fill="#FFFFFF">100000mi</text>
+            <image href="/images/white-line.svg" x="65px" y="70px" width="320px" height="10px"></image>
+            <text xmlns="http://www.w3.org/2000/svg" x="115px" y="100px" fontSize="16" textAnchor="middle" fill="#FFFFFF">iPhone</text>
+            <image href="/images/musical-note.svg" x="150px" y="80px" width="25px" height="25px"></image>
+            <text xmlns="http://www.w3.org/2000/svg" x="275px" y="100px" fontSize="12" textAnchor="middle" fill="#FFFFFF">Frank Sinatra - Hbar To The Moon</text>
+          </g>
+        </svg>
+      </div>
+    )
   }
 }

@@ -81,5 +81,6 @@ module.exports = {
     chunkOrigins: false,
     modules: false,
     warnings: false
-  }
+  },
+  devtool: "eval-cheap-source-map"
 };

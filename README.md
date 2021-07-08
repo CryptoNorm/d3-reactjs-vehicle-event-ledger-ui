@@ -5,6 +5,9 @@ It serves as a front end UI to record vehicle maintenance actions.  Requests are
 The function of this demo app is to log noteable vehicle events, such as damage, malufunctions, repairs, performance metrics onto a public, immutable distibuted ledger.  In a real world implemetation, users could use this log to prove they did maintenance on their vehicle, which would be usefull for resale evalution purposes. The manufactureer and orgazizations, like insurance providers and independent reviewer, would also find the data invaluable.
 
 ## Setup
+
+This demo assumes you have already installed [Node JS](https://nodejs.org/en/download/) & [Yarn package installer](https://classic.yarnpkg.com/en/docs/install/)
+
 ### Set url & port from REST endpoint (default is 8082)
 /src/http-common.js
 ```

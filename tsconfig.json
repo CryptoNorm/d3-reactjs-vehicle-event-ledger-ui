@@ -4,6 +4,7 @@
     "noImplicitAny": false,
     "module": "commonjs",
     "target": "es6",
+    "types": ["node"],
     "lib": [
       "es2015",
       "es2017",

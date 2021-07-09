@@ -1,7 +1,7 @@
 import * as React from 'react';
 import VehicleEventDataService  from "../../services/vehicleEvent.service";
 
-export class LedgerReader extends React.Component<{}, { vehicleEvents: [], interval: NodeJS.Timeout }> {
+export class LedgerReader extends React.Component<{}, { vehicleEvents: [], interval: any }> {
   constructor(props) {
     super(props);
 
@@ -12,7 +12,9 @@ export class LedgerReader extends React.Component<{}, { vehicleEvents: [], inter
   }
 
   public componentDidMount() {
-    this.setState({interval: setInterval(() => this.retrieveVehicleEvents(), 5000)});
+    this.setState({
+      interval: setInterval(() => this.retrieveVehicleEvents(), 5000)
+    });
   }
 
   public componentWillUnmount() {

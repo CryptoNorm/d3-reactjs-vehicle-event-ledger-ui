@@ -79,7 +79,7 @@ export class Dashboard extends React.Component<{}, IDashboardState> {
   public componentDidMount() {
     this.subs = new Subscription();
 
-    this.peelAudio.load(this.peelAudio)
+    this.peelAudio.load()
 
     const keyDown = fromEvent(document, 'keydown')
       .pipe(filter((e: KeyboardEvent) => e.which === 38))

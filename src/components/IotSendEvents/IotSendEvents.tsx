@@ -215,13 +215,13 @@ export class IotSendEvents extends React.Component <{}, IEventState>{
   }
 
   public componentDidMount() {
-      this.glassAudio.load(this.glassAudio)
-      this.screamingAudio.load(this.screamingAudio)
-      this.flareAudio.load(this.flareAudio)
-      this.whistleAudio.load(this.whistleAudio)
-      this.batteryAudio.load(this.batteryAudio)
-      this.staticAudio.load(this.staticAudio)
-      this.paymentAudio.load(this.paymentAudio)
+      this.glassAudio.load()
+      this.screamingAudio.load()
+      this.flareAudio.load()
+      this.whistleAudio.load()
+      this.batteryAudio.load()
+      this.staticAudio.load()
+      this.paymentAudio.load()
   }
 
   public render() {

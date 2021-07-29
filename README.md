@@ -41,7 +41,7 @@ Car dashboard experiment with D3 data visualisation and React.
 
 ## Preview
 
-![Preview](https://user-images.githubusercontent.com/1796022/70824182-f1374600-1de1-11ea-98dd-f1fee06e7fd0.gif)
+![Preview](https://raw.githubusercontent.com/Crypto-Brothers/d3-reactjs-vehicle-event-ledger-ui/master/.github/images/democap.gif)
 
 ## Instructions
 

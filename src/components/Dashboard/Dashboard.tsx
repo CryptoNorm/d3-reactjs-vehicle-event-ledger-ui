@@ -52,12 +52,20 @@ export class Dashboard extends React.Component<{}, IDashboardState> {
   }  
 
   saveVehicleEvent(category, type, details) {
-    var data = {
-      vin: this.state.vin,
-      eventcategory: category,
-      eventtype: type,
-      eventdetails: details
-    };
+    var data = 
+    {
+      schemaType: "JSON",
+      schema: {
+                type: "object",
+                properties: {
+                              vin: this.state.vin,
+                              eventcategory: category,
+                              eventtype: type,
+                              eventdetails: details
+                            },
+                additionalProperties:true
+              }
+     };
     console.log(data);
     VehicleEventDataService.create(data)
       .then(response => {

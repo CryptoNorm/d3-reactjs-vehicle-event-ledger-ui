@@ -165,7 +165,7 @@ export class RpmGauge extends React.Component<IRpmGaugeProps> {
 
     // big text in center
     tg.append('image')
-      .attr('xlink:href', '/images/hederaH.png')
+      .attr('xlink:href', '/images/aivenCrab.png')
       .attr('x', '-50')
       .attr('y', '-60px')
       .style('position', 'absolute')

@@ -13,7 +13,7 @@ export class LedgerReader extends React.Component<{}, { vehicleEvents: [], inter
 
   public componentDidMount() {
     this.setState({
-      interval: setInterval(() => this.retrieveVehicleEvents(), 5000)
+      interval: setInterval(() => this.retrieveVehicleEvents(), 500000)
     });
   }
 

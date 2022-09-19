@@ -4,11 +4,11 @@ class VehicleEventDataService {
 
 
   getAll() {
-    return http.get("/vehicleEvents");
+    return http.get("/topics/iot-events");
   }
 
   create(data) {
-    return http.post("/vehicleEvents", data);
+    return http.post("/topics/iot-events", data);
   } 
 
   findByVin(vin) {
